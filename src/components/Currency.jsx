@@ -8,7 +8,7 @@ const Currency = () => {
     const fetchRates = async () => {
       try {
         const res = await fetch(
-          `http://data.fixer.io/api/latest?access_key=6b67b3027d8f7472d22df259e7608d83&symbols=USD,ILS,EUR,JOD`
+          `https://data.fixer.io/api/latest?access_key=6b67b3027d8f7472d22df259e7608d83&symbols=USD,ILS,EUR,JOD`
         );
         const data = await res.json();
         console.log("API Response:", data);
