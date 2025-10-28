@@ -8,7 +8,7 @@ const Prayer = () => {
     const fetchPrayerTimes = async () => {
       try {
         const res = await fetch(
-          "https://api.aladhan.com/v1/timingsByCity?city=Ramallah&country=Palestine&method=2"
+          "https://api.aladhan.com/v1/timingsByCity/28-10-2025?city=Ramallah&country=Palestine"
         );
         const data = await res.json();
         setPrayerTimes(data.data.timings);
